@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="All Tests Suite">
+<!--    represents a test suite -> largest group of tests-->
+
+  <test name="UI Tests">
+<!--   subcategory/subgroup of tests under a test suite   -->
+
+      <classes>
+          <class name="demotests.TestNGDemo"> </class>
+          <class name="demotests.BeforeAfterDemo"> </class>
+      </classes>
+
+  </test>
+
+<!--    <test name="API Tests">-->
+<!--        &lt;!&ndash;      &ndash;&gt;-->
+
+<!--        <classes>-->
+<!--            <class name="demotests.TestNGDemo"> </class>-->
+<!--            <class name="demotests.BeforeAfterDemo"> </class>-->
+<!--        </classes>-->
+
+<!--    </test>-->
+
+
+<!--    <test name="Database Tests">-->
+<!--        &lt;!&ndash;      &ndash;&gt;-->
+
+<!--        <classes>-->
+<!--            <class name="demotests.TestNGDemo"> </class>-->
+<!--            <class name="demotests.BeforeAfterDemo"> </class>-->
+<!--        </classes>-->
+
+<!--    </test>-->
+
+</suite>
