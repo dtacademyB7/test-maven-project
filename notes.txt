@@ -1,0 +1,11 @@
+
+4/5/2022
+-------------------------
+ - testng.xml - a central file in TestNG framework that helps us organize, configure and run our tests in a specific manner.
+ - testng.xml file hierarchy - suite -> test -> classes -> class -> methods
+ - @BeforeTest / @AfterTest -> runs before/after subgroup of tests which is represented by <test> tag.
+ - @BeforeMethod / @AfterMethod -> runs before/after each @Test annotated method.
+ - default run order of tests within a class - alphabetical based on the name of the methods
+ - priority - a parameter that can be applied to @Test annotation that sets the run order/priority.
+ -
+

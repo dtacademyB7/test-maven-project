@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="All Tests Suite">
+
+  <test name="UI Tests">
+
+      <classes>
+<!--          class names should include package names-->
+          <class name="april5.MultipleParameters"/>
+          <class name="demotests.BeforeAfterDemo"/>
+      </classes>
+
+  </test>
+
+</suite>
