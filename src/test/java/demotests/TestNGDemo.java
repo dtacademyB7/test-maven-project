@@ -26,8 +26,23 @@ public class TestNGDemo {
 
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void testCase2() {
+        WebDriverManager.chromedriver().setup();
+        //
+        WebDriver driver = new ChromeDriver();
+
+
+        driver.get("https://mvnrepository.com/");
+
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://mvnrepository.com/"));
+
+        driver.quit();
+
+    }
+
+    @Test
+    public void testCase3() {
         WebDriverManager.chromedriver().setup();
         //
         WebDriver driver = new ChromeDriver();

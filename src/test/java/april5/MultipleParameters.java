@@ -11,17 +11,20 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
+
+//@Ignore   these annotations can be applied at class level which is applied to all methods of the class
+//@Test
 public class MultipleParameters {
 
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void setupClass(){
         WebDriverManager.chromedriver().setup();
 
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setupMethod(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -30,7 +33,7 @@ public class MultipleParameters {
 
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDownMethod(){
         driver.quit();
     }
@@ -46,8 +49,8 @@ public class MultipleParameters {
 
 
     }
-
-    @Test (priority = 1)
+     // with group tests @Before and @After methods are not going to run by default
+    @Test (priority = 1, groups = "smoke")
     public void negativelLoginTest() {
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester", Keys.TAB, "incorrectPass", Keys.ENTER);
@@ -55,8 +58,8 @@ public class MultipleParameters {
 
 
     }
-    @Ignore
-    @Test (priority = 2)
+//    @Ignore
+    @Test (priority = 2, groups = "smoke")
     public void negativelLoginTest2(){
 
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("", Keys.TAB, "", Keys.ENTER);

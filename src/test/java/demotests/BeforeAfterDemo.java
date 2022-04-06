@@ -11,20 +11,20 @@ public class BeforeAfterDemo {
 
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void setupClass(){
         WebDriverManager.firefoxdriver().setup();
 
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setupMethod(){
         driver = new FirefoxDriver();
         driver.get("https://mvnrepository.com/");
 
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDownMethod(){
         driver.quit();
     }
@@ -38,7 +38,7 @@ public class BeforeAfterDemo {
 //
 //    }
 
-    @Test
+    @Test (groups = "smoke")
     public void testCase1(){
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--apply timeout to all tests within this xml file-->
+<suite name="All Tests Suite"  time-out="2000" >
+
+  <test name="UI Tests">
+
+      <classes>
+<!--          class names should include package names-->
+          <class name="april5.MultipleParameters"/>
+
+      </classes>
+
+  </test>
+
+</suite>
