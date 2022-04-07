@@ -9,3 +9,11 @@
  - priority - a parameter that can be applied to @Test annotation that sets the run order/priority.
  -
 
+
+4/7/2022
+
+--------------------------
+ - when running group tests, the @Before and @After methods are not going to run by default and we need to add alwaysRun = true
+ - Hard Assertions: are your regular Assert class's assert methods that will stop the execution of the test as soon as they fail
+ - Why parametrize tests? -> To run the same test with different input -> data-driven testing(DDT) -> to increase test coverage
+ -

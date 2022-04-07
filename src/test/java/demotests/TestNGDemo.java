@@ -26,7 +26,7 @@ public class TestNGDemo {
 
     }
 
-    @Test (groups = "smoke")
+    @Test (groups = {"smoke","homepage"})
     public void testCase2() {
         WebDriverManager.chromedriver().setup();
         //
@@ -41,7 +41,7 @@ public class TestNGDemo {
 
     }
 
-    @Test
+    @Test (groups = {"homepage"})
     public void testCase3() {
         WebDriverManager.chromedriver().setup();
         //

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Tests Suite">
+
+  <test name="UI Tests">
+
+<!--      indicate the specific group/s-->
+     <groups>
+         <run>
+             <include name="homepage"/>
+             <include name="smoke"/>
+         </run>
+     </groups>
+
+
+
+<!--   indicate the scope of tests -->
+      <packages>
+<!--          run everything under all the packages -->
+          <package name=".*"/>
+
+      </packages>
+
+
+  </test>
+
+</suite>

@@ -48,7 +48,7 @@ public class TimeoutTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://mvnrepository.com/");
     }
 
-    @Test (groups = "smoke")
+    @Test (groups = {"smoke", "homepage"})
     public void verifyHomepageTitle() {
 
         driver.get("https://mvnrepository.com/");
