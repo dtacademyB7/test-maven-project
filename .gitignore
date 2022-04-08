@@ -1,6 +1,9 @@
 #list of ignored file types and folders
 .DS_Store
 *.iml
+*.png
+*.jpg
+*.jpeg
 /.idea/
 /out/
 /target/
