@@ -16,4 +16,22 @@
  - when running group tests, the @Before and @After methods are not going to run by default and we need to add alwaysRun = true
  - Hard Assertions: are your regular Assert class's assert methods that will stop the execution of the test as soon as they fail
  - Why parametrize tests? -> To run the same test with different input -> data-driven testing(DDT) -> to increase test coverage
- -
+ - Data-driven testing -> way of organizing your tests where test case data is separated from the test case logic in order to run the same test script with different sets of data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
